@@ -1,0 +1,22 @@
+{
+  "name": "express-01",
+  "version": "0.0.1",
+  "description": "My Node Express 0001",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DahLevi/node-express-01.git"
+  },
+  "dependencies": {
+    "express": "^4.0.0"
+  },
+  "author": "Levi Dahlberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DahLevi/node-express-01/issues"
+  },
+  "homepage": "https://github.com/DahLevi/node-express-01#readme"
+}
