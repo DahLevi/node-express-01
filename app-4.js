@@ -9,12 +9,22 @@ app.use(express.static('public'));
 
 app.get('/process_get', function handleProcessGet(request, response) {
     retVal = {
-        firstName: request.query.firstName,
-        lastName: request.query.lastName
+        number: request.query.numberInput,
+        isPrime: checkPrime(request.query.numberInput)
     };
+
     console.log(retVal);
     response.send(JSON.stringify(retVal));
 });
+
+
+function checkPrime(num){
+    for (let i = 2; i < num; i++) {
+        if(num % i === 0)
+            return false;
+    }
+    return true;
+}
 
 var server = app.listen(3000, function ServerListner() {
     var host = server.address().address;
